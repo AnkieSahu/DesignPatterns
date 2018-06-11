@@ -1,15 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AdapterPattern.Adapter;
+using AdapterPattern.Target;
+using System;
 
-namespace DesignPatterns
+namespace AdapterPattern
 {
-    class Program
+    class Program : PermanentEmp
     {
         static void Main(string[] args)
         {
-        }
+            //// Without Adapter
+            //IEmployee emp = new EmployeeManager(); // It will throw error
+            //Console.WriteLine(emp.GetEmployee());
+
+            // From Object Adapter
+            IEmployee objAdptr = new EmployeeObjectAdapter();            
+            Console.WriteLine(objAdptr.GetEmployee().ToString());
+
+            // From Class Adapter
+            IEmployee clsAdptr = new EmployeeClassAdapter();
+            Console.WriteLine(clsAdptr.GetEmployee().ToString());
+
+
+        }       
     }
 }
