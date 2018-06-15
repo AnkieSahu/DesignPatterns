@@ -4,6 +4,8 @@ Adapter pattern:-
 2) When we are writing a framework and there are some unwritten code and interface which will use this.
 3) Also known as Wrappers.
 4) Match interfaces Of Different classes.
+5) Automapper is implementing Adpater Pattern to convert DTO to class object and in .Net Framework different Adpater is being used like below:- 
+public sealed class OleDbDataAdapter : DbDataAdapter, IDbDataAdapter,	IDataAdapter, ICloneable
 
 There are two types of adapter patterns, The main difference:
 
