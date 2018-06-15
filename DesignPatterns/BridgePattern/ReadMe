@@ -1,0 +1,9 @@
+Bridge pattern:-
+
+1) The Bridge design pattern allows you to separate the abstraction from the implementation.It is a structural design pattern.
+2) Decouple abstraction from its implementation so that the two can vary independently.
+3) It invloves an interface which acts as bridge between abstraction class and implementor class.
+
+Where we should use it:-
+1) When we need to avoid permanent bindings between abstraction and its implementation.
+2) We need to share an implementation among multiple objects.
