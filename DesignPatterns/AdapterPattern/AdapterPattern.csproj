@@ -52,7 +52,9 @@
     <Compile Include="Target\PermanentEmp.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Adapter.docx" />
     <None Include="App.config" />
+    <None Include="ReadMe" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

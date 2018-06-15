@@ -1,22 +1,17 @@
 ﻿using AdapterPattern.Adaptee;
 using AdapterPattern.Target;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdapterPattern.Adapter
 {
     public class EmployeeClassAdapter : EmployeeManager, IEmployee
     {
         public PermanentEmp GetEmployee()
-        {           
-            var emp = GetClientEmployee();
+        {
+            ContractEmployee cntrEmp = GetClientEmployee();
             var perEmp = new PermanentEmp();
-            perEmp.EmpID = emp.EmpID;
-            perEmp.Name = emp.Name;
-            perEmp.DeewaliBonus = emp.GuestGift * 500;
+            perEmp.EmpID = cntrEmp.EmpID;
+            perEmp.Name = cntrEmp.Name;
+            perEmp.DeewaliBonus = cntrEmp.GuestGift * 500;
             return perEmp;
         }
     }
