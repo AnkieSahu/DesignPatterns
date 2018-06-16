@@ -1,0 +1,5 @@
+Builder pattern:-
+
+1) Seperates the construction of a complex object from its representation so that the same construction process 
+   can create different representations.
+2) Builder pattern solves the problem of increasing constructor parameters and the order of construction.
