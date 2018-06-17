@@ -42,11 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cake.cs" />
-    <Compile Include="CakeBuilder.cs" />
-    <Compile Include="CakeMaker.cs" />
-    <Compile Include="StrawberryCake.cs" />
-    <Compile Include="ChocolateCake.cs" />
+    <Compile Include="Product\Cake.cs" />
+    <Compile Include="Builder\CakeBuilder.cs" />
+    <Compile Include="Director\CakeMaker.cs" />
+    <Compile Include="ConcreteBuilder\StrawberryCake.cs" />
+    <Compile Include="ConcreteBuilder\ChocolateCake.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

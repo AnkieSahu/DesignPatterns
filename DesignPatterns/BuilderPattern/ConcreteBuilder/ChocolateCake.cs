@@ -9,7 +9,7 @@
         }
         public override void AddCream()
         {
-            cake.CreamType = CreamType.Chocolates;
+            cake.CreamType = CreamType.Chocolate;
             System.Console.WriteLine("Applying cream of flavour " + cake.CreamType);
         }
         public override void AddToppings()
