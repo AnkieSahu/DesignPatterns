@@ -1,0 +1,5 @@
+Decorator pattern:-
+
+1) It is an structural design pattern which is used to extend or alter the functionlity at runtime.
+   It wraps the object into decorator class.
+2) If a legecy code is not having client side validation then with decorator pattern we can achieve this.
