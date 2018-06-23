@@ -1,0 +1,8 @@
+IDisposable pattern:-
+
+1) We use Finalize method to release unmanaged resources(code like in vb6, windows api or using Com component).
+2) If there is not any unmanaged code then no need to use Finalize. 
+3) We can not directly call Finalize method, its called by Garbage collector. We dont have any control on it.
+   We need to just define destructor.
+4) There are 3 generations for objects, when any object find finalize method implemented i.e. destructor, 
+   Then it put in Finalize Queue. Garbage collector frequently check for Generation 0, but rarely finalize queue. 

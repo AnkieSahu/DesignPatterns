@@ -1,0 +1,8 @@
+Facade pattern:-
+
+1) Facade provides a unified interface to set of interfaces in a subsystem. Facade defines a highter-level 
+   interface that makes the subsystem easier to use. Facade is a french word meaning is "Face".
+2) Its a structural design pattern.
+
+When to use:-
+1) Subsystem are complex aand need to provide a simple interface.
